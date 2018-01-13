@@ -24,8 +24,8 @@
 ### **4. Create a New Security Group**  
 **a.** On the EC2 Dashboard, select 'Security Groups'.  
 **b.** Create Security Group.  
-**c.** Name the security group (ex: `juypter_docker`).  
-**d.** Write a quick description like "Open access to Jupyter and Docker default ports."  
+**c.** Name the security group (ex: `juypter_docker`).   
+**d.** Write a quick description like "Open access to Jupyter and Docker default ports."    
 **e.** Then add the following rules:  
 - SSH, Port 22  
 - HTTP, Port 80  
