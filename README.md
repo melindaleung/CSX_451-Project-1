@@ -23,9 +23,9 @@
 
 ### **4. Create a New Security Group**  
 **a.** On the EC2 Dashboard, select 'Security Groups'.  
-**b.** Create Security Group.  
-**c.** Name the security group (ex: `juypter_docker`).   
-**d.** Write a quick description like "Open access to Jupyter and Docker default ports."    
+**b.** Create Security Group.  
+**c.** Name the security group (ex: `juypter_docker`).  
+**d.** Write a quick description like "Open access to Jupyter and Docker default ports."  
 **e.** Then add the following rules:  
 - SSH, Port 22  
 - HTTP, Port 80  
@@ -37,5 +37,11 @@
 **g.** Create.  
 
 ### **5. Setting up the AWS Operating System**  
-
+**a.** On the EC2 Dashboard, click the 'Launch Instance' button.  
+**b.** First tab is to "Choose an Amazon Machine Image (AMI)," which contains the software needed to run a sandbox machine. Select the latest stable Ubuntu Server that is free-tier eligible.  
+**c.** Second tab is to "Choose an Instance Type." Select the t2.micro (eligible for free-tier).  
+**d.** Third tab is to "Configure Instance," which can be ignored.  
+**e.** Fourth tab is to "Add Storage." Change the size to 30GB.  
+**f.** Fifth tab is to "Add Tags." This can be ignored.  
+**g.** Sixth tab is to "Configure Security Groups."
 
