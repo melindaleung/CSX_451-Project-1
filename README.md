@@ -50,6 +50,20 @@
 ### **6. Docker Installation**  
 **a.** SSH into EC2 Instance by entering `ssh ubuntu@12.345.678.901 ` on Git Bash. Use the **public** IP address from the instance you just created.  
 **b.** Then download docker with `curl -sSL https://get.docker.com/ | sh`.  
+**c.** Add the Ubuntu user to the Docker Group with `sudo usermod -aG docker ubuntu`.  
+**d.** Restart Docker Daemon with `sudo reboot`. Force quit and reenter the system with `ssh ubuntu@12.345.678.901 `.  
+**e.** Check the newly downloaded Docker version by entering `docker -v`.  
 
-### **7. Add the Ubuntu User to the Docker
-**c.** 
+### **7. Obtaining the Correct Docker Image**  
+**a.** Pull the Docker image you wish to work on with `docker pull jupyter/scipy-notebook`. This takes about a ~1-2 minutes. Once this is complete, it will be present in the docker images cache. Anytime you wish to run a new Jupyter container, Docker will load the container from the image in the cache.  
+  
+### **8. Running the Correct Docker Image as a Container**  
+**a.** Run Jupyter Notebook server in the Docker container with `docker run -p 8888:8888 jupyter/scipy-notebook`.
+
+### **9. Addressing Jupyter Notebook Security Concerns**
+**a.** The previous output provided an authenication tocken used to access the Notebook server through a browser. Use the URL provided and replace the `localhost` with the public IP address the EC2 instance is using.
+
+### Overall Diagram
+
+### Budget
+
