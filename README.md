@@ -64,6 +64,16 @@
 **a.** The previous output provided an authenication tocken used to access the Notebook server through a browser. Use the URL provided and replace the `localhost` with the public IP address the EC2 instance is using.
 
 ### Overall Diagram
+![docker diagram](https://user-images.githubusercontent.com/22715593/34930765-0ad4bd6e-f980-11e7-8eb1-f2a895ba9811.JPG)
 
-### Budget
+### Budget  
+The following details the cost of running Jupyter Data Science Notebook Servers using different kinds of EC2 instances for three months: (*3 months will contain about ~90 days. Therefore there will be approximately 2160 hours in three months*)  
 
+| EC2 Instances 	| Price Per Hour 	| Linux Usage Cost 	|  
+|---------------	|----------------	|------------------	|  
+| t2.micro      	| $.0023         	| $4.97            	|  
+| t2.small      	| $.004          	| $8.64            	|  
+| t2.medium     	| $.0082         	| $17.71           	|  
+| t2.large      	| $.0162         	| $34.99           	|  
+| t2.xlarge     	| $.0319         	| $68.90           	|  
+| t2.2xlarge    	| $.0653         	| $140.83          	|  
