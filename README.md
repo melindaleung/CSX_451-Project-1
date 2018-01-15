@@ -43,5 +43,13 @@
 **d.** Third tab is to "Configure Instance," which can be ignored.  
 **e.** Fourth tab is to "Add Storage." Change the size to 30GB.  
 **f.** Fifth tab is to "Add Tags." This can be ignored.  
-**g.** Sixth tab is to "Configure Security Groups."
+**g.** Sixth tab is to "Configure Security Groups." Select an existing security group and choose the Juypter_Docker group. There will be 8 rules in this group. Be sure to check that port 2376 and 8888.  
+**h.** Seventh tab is to "Review Instance Launch." Check that an Ubuntu server is being used, t2.micro is the variable type, and the appropriate rules in the security group is applied. If this is correct, press 'Launch.'  
+**i.** Choose an existing key pair and check the box to acknowledge you have read the statement. Then hit 'Launch Instance.' You should be able to see it in the EC2 Dashboard Instances pane.  
 
+### **6. Docker Installation**  
+**a.** SSH into EC2 Instance by entering `ssh ubuntu@12.345.678.901 ` on Git Bash. Use the **public** IP address from the instance you just created.  
+**b.** Then download docker with `curl -sSL https://get.docker.com/ | sh`.  
+
+### **7. Add the Ubuntu User to the Docker
+**c.** 
