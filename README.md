@@ -1,4 +1,4 @@
-# CSX_451-Project-1
+# How to Launch a Jupyter Notebook with AWS
 
 **Goal**: Outline all the steps required to configure my own Jupyter Data Science Notebook Server on Amazon Web Services. 
 
